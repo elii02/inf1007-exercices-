@@ -11,14 +11,13 @@ def get_first_part_of_name(name):
 	return "Bonjour " + first_name
 
 def get_random_sentence(animals, adjectives, fruits):
-	animaux = (chevreuil, chien, pigeon)
-	adjectifs = (rouge, officiel, lourd) 
-	fruits = (pommes, kiwis, bananes)
-
-	return ""
+	animaux = ("chevreuil", "chien", "pigeon")
+	adjectifs = ("rouge", "officiel", "lourd") 
+	fruits = ("pommes", "kiwis", "bananes")
+	return "Aujourd’hui, j’ai vu un {0} s’emparer d’un panier {1} plein de {2}".format(random.choice(animaux), random.choice(adjectifs), random.choice(fruits))
 
 def format_date(year, month, day, hours, minutes, seconds):
-	return ""
+	return f"{year:04}-{month:02}-{day:02} {hours:02}:{minutes:02}:{seconds:06.3f}"
 
 def encrypt(text, shift):
 	# car = "Z"
