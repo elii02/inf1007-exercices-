@@ -2,27 +2,51 @@
 # -*- coding: utf-8 -*-
 
 from typing import List
+import math
 
 
 def convert_to_absolute(number: float) -> float:
-    return 0
+    if number < 0:
+        number = number*-1
+        return number
 
 
 def use_prefixes() -> List[str]:
     prefixes, suffixe = 'JKLMNOPQ', 'ack'
-
-    return [""]
+    chaine = ""
+    for indice, car in enumerate(prefixes):
+        chaine += car + suffixe + (", " if indice < len(prefixes)-1 else"")
+    return chaine
 
 
 def prime_integer_summation() -> int:
-    return 0
+    nombre = 2
+    compteur = 0
+    somme = 0
+    while compteur < 100:
+        for i in range(2, int(math.sqrt(nombre) +1)):
+            if nombre % i == 0:
+                break
+        else: #close else de la boucle for
+            compteur += 1 
+            somme += nombre
+        nombre +=1
+    return compteur, somme
 
 
 def factorial(number: int) -> int:
-    return 0
+    nombre = 0
+    resultat = nombre if nombre != 0 else 1
+    for i in range(2, nombre):
+        resultat *= i 
+    return resultat
 
 
 def use_continue() -> None:
+    for i in range(1,11):
+        if i == 5:
+            continue
+        
     pass
 
 
