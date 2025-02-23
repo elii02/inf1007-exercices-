@@ -70,10 +70,12 @@ def format_base(value, base, letters):
 	if value < 0:
 		result += "-"
 	# À ce moment, on a la bonne string, mais à l'envers, donc on la retourne renversée.
-	# Utiliser un pas négatif dans le slicing part de la fin plutôt que du début, donc [::-1] prend la string au complet, mais en partant de la fin, donc la string renversée.
+	# Utiliser un pas négatif dans le slicing part de la fin plutôt que du début, donc [::-1] prend la string au complet, mais en partant de la fin, 
+	# donc la string renversée.
 	return result[::-1]
 
-	# Approche alternative : on aurait pu faire result = letters[digit_value] + result, puis mettre le signe de négation au début plutôt qu'à la fin de la string sans faire le renversement. Ça revient au même.
+	# Approche alternative : on aurait pu faire result = letters[digit_value] + result, puis mettre le signe de négation au début plutôt 
+	# qu'à la fin de la string sans faire le renversement. Ça revient au même.
 
 
 if __name__ == "__main__":

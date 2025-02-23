@@ -29,7 +29,9 @@ def average(values):
 		somme += v*(v>0)
 
 def cash(value):
-	# TODO: Calculez le nombre de billets de 20$, 10$ et 5$ et pièces de 1$, 25¢, 10¢ et 5¢ à remettre pour représenter la valeur. Il faut arrondir à la pièce de 5¢ près. Il faut remplir les variables twenties, tens, fives, ones, quarters, dimes et nickels avec le quantité de chaque dénomination.
+	# TODO: Calculez le nombre de billets de 20$, 10$ et 5$ et pièces de 1$, 25¢, 10¢ et 5¢ à remettre pour représenter la valeur. 
+	# Il faut arrondir à la pièce de 5¢ près. 
+	# Il faut remplir les variables twenties, tens, fives, ones, quarters, dimes et nickels avec le quantité de chaque dénomination.
 	twenties, reste = divmod(value,20)
 	tens, reste = divmod(reste,10)
 	fives, reste = divmod(reste,5)

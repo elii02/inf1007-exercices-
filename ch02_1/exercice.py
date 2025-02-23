@@ -3,8 +3,8 @@
 
 def majuscule(mot):
     # TODO completer la fonction ici
+    mot = mot.upper()
     return mot
-
 
 if __name__ == '__main__':
     mots = [
